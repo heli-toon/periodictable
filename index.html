@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Periodic Table</title>
+</head>
+<body>
+    <main>
+        <div id="element-info">
+            <p>Click on an element to see some info about it.</p>
+        </div>
+        <div class="container">
+            <div class="item non-metal" onclick="showElementInfo('H')" style="grid-column: 1; grid-row: 1;">H<span>1</span></div>
+            <div class="item noble-gas" onclick="showElementInfo('He')" style="grid-column: 18; grid-row: 1;">He<span>2</span></div>
+            <div class="item alkali-metal" onclick="showElementInfo('Li')" style="grid-column: 1; grid-row: 2;">Li<span>3</span></div>
+            <div class="item alkaline-earth-metal" onclick="showElementInfo('Be')" style="grid-column: 2; grid-row: 2;">Be<span>4</span></div>
+            <div class="item non-metal" onclick="showElementInfo('B')" style="grid-column: 13; grid-row: 2;">B<span>5</span></div>
+            <div class="item non-metal" onclick="showElementInfo('C')" style="grid-column: 14; grid-row: 2;">C<span>6</span></div>
+            <div class="item non-metal" onclick="showElementInfo('N')" style="grid-column: 15; grid-row: 2;">N<span>7</span></div>
+            <div class="item non-metal" onclick="showElementInfo('O')" style="grid-column: 16; grid-row: 2;">O<span>8</span></div>
+            <div class="item halogen" onclick="showElementInfo('F')" style="grid-column: 17; grid-row: 2;">F<span>9</span></div>
+            <div class="item noble-gas" onclick="showElementInfo('Ne')" style="grid-column: 18; grid-row: 2;">Ne<span>10</span></div>
+            <div class="item alkali-metal" onclick="showElementInfo('Na')" style="grid-column: 1; grid-row: 3;">Na<span>11</span></div>
+            <div class="item alkaline-earth-metal" onclick="showElementInfo('Mg')" style="grid-column: 2; grid-row: 3;">Mg<span>12</span></div>
+            <div class="item other-metal" onclick="showElementInfo('Al')" style="grid-column: 13; grid-row: 3;">Al<span>13</span></div>
+            <div class="item non-metal" onclick="showElementInfo('Si')" style="grid-column: 14; grid-row: 3;">Si<span>14</span></div>
+            <div class="item non-metal" onclick="showElementInfo('P')" style="grid-column: 15; grid-row: 3;">P<span>15</span></div> 
+            <div class="item non-metal" onclick="showElementInfo('S')" style="grid-column: 16; grid-row: 3;">S<span>16</span></div> 
+            <div class="item halogen" onclick="showElementInfo('Cl')" style="grid-column: 17; grid-row: 3;">Cl<span>17</span></div> 
+            <div class="item noble-gas" onclick="showElementInfo('Ar')" style="grid-column: 18; grid-row: 3;">Ar<span>18</span></div> 
+            <div class="item alkali-metal" onclick="showElementInfo('K')" style="grid-column: 1; grid-row: 4;">K<span>19</span></div> 
+            <div class="item alkaline-earth-metal" onclick="showElementInfo('Ca')" style="grid-column: 2; grid-row: 4;">Ca<span>20</span></div> 
+            <div class="item transition-metal" onclick="showElementInfo('Sc')" style="grid-column: 3; grid-row: 4;">Sc<span>21</span></div> 
+            <div class="item transition-metal" onclick="showElementInfo('Ti')" style="grid-column: 4; grid-row: 4;">Ti<span>22</span></div> 
+            <div class="item transition-metal" onclick="showElementInfo('V')" style="grid-column: 5; grid-row: 4;">V<span>23</span></div> 
+            <div class="item transition-metal" onclick="showElementInfo('Cr')" style="grid-column: 6; grid-row: 4;">Cr<span>24</span></div> 
+            <div class="item transition-metal" onclick="showElementInfo('Mn')" style="grid-column: 7; grid-row: 4;">Mn<span>25</span></div> 
+            <div class="item transition-metal" onclick="showElementInfo('Fe')" style="grid-column: 8; grid-row: 4;">Fe<span>26</span></div> 
+            <div class="item transition-metal" onclick="showElementInfo('Co')" style="grid-column: 9; grid-row: 4;">Co<span>27</span></div> 
+            <div class="item transition-metal" onclick="showElementInfo('Ni')" style="grid-column: 10; grid-row: 4;">Ni<span>28</span></div> 
+            <div class="item transition-metal" onclick="showElementInfo('Cu')" style="grid-column: 11; grid-row: 4;">Cu<span>29</span></div> 
+            <div class="item transition-metal" onclick="showElementInfo('Zn')" style="grid-column: 12; grid-row: 4;">Zn<span>30</span></div> 
+            <div class="item other-metal" onclick="showElementInfo('Ga')" style="grid-column: 13; grid-row: 4;">Ga<span>31</span></div> 
+            <div class="item other-metal" onclick="showElementInfo('Ge')" style="grid-column: 14; grid-row: 4;">Ge<span>32</span></div> 
+            <div class="item non-metal" onclick="showElementInfo('As')" style="grid-column: 15; grid-row: 4;">As<span>33</span></div> 
+            <div class="item non-metal" onclick="showElementInfo('Se')" style="grid-column: 16; grid-row: 4;">Se<span>34</span></div>
+            <div class="item halogen" onclick="showElementInfo('Br')" style="grid-column: 17; grid-row: 4;">Br<span>35</span></div>
+            <div class="item noble-gas" onclick="showElementInfo('Kr')" style="grid-column: 18; grid-row: 4;">Kr<span>36</span></div>
+            <div class="item alkali-metal" onclick="showElementInfo('Rb')" style="grid-column: 1; grid-row: 5;">Rb<span>37</span></div>
+            <div class="item alkaline-earth-metal" onclick="showElementInfo('Sr')" style="grid-column: 2; grid-row: 5;">Sr<span>38</span></div>
+            <div class="item transition-metal" onclick="showElementInfo('Y')" style="grid-column: 3; grid-row: 5;">Y<span>39</span></div>
+            <div class="item transition-metal" onclick="showElementInfo('Zr')" style="grid-column: 4; grid-row: 5;">Zr<span>40</span></div> 
+            <div class="item transition-metal" onclick="showElementInfo('Nb')" style="grid-column: 5; grid-row: 5;">Nb<span>41</span></div> 
+            <div class="item transition-metal" onclick="showElementInfo('Mo')" style="grid-column: 6; grid-row: 5;">Mo<span>42</span></div> 
+            <div class="item transition-metal" onclick="showElementInfo('Tc')" style="grid-column: 7; grid-row: 5;">Tc<span>43</span></div> 
+            <div class="item transition-metal" onclick="showElementInfo('Ru')" style="grid-column: 8; grid-row: 5;">Ru<span>44</span></div> 
+            <div class="item transition-metal" onclick="showElementInfo('Rh')" style="grid-column: 9; grid-row: 5;">Rh<span>45</span></div> 
+            <div class="item transition-metal" onclick="showElementInfo('Pd')" style="grid-column: 10; grid-row: 5;">Pd<span>46</span></div>
+            <div class="item transition-metal" onclick="showElementInfo('Ag')" style="grid-column: 11; grid-row: 5;">Ag<span>47</span></div> 
+            <div class="item transition-metal" onclick= "showElementInfo('Cd')" style="grid-column: 12; grid-row: 5;">Cd<span>48</span></div> 
+            <div class="item other-metal" onclick= "showElementInfo('In')" style="grid-column: 13; grid-row: 5;">In<span>49</span></div>
+            <div class="item other-metal" onclick= "showElementInfo('Sn')" style="grid-column: 14; grid-row: 5;">Sn<span>50</span></div>
+            <div class="item other-metal" onclick= "showElementInfo('Sb')" style="grid-column: 15; grid-row: 5;">Sb<span>51</span></div>
+            <div class="item non-metal" onclick="showElementInfo('Te')" style="grid-column: 16; grid-row: 5;">Te<span>52</span></div>
+            <div class="item halogen" onclick="showElementInfo('I')" style="grid-column: 17; grid-row: 5;">I<span>53</span></div>
+            <div class="item noble-gas" onclick="showElementInfo('Xe')" style="grid-column: 18; grid-row: 5;">Xe<span>54</span></div>
+            <div class="item alkali-metal" onclick="showElementInfo('Cs')" style="grid-column: 1; grid-row: 6;">Cs<span>55</span></div>
+            <div class="item alkaline-earth-metal" onclick="showElementInfo('Ba')" style="grid-column: 2; grid-row: 6;">Ba<span>56</span></div>
+            <div class="item lanthanide-series" onclick="showElementInfo('La')" style="grid-column: 3; grid-row: 6;">La<span>57</span></div>
+            <div class="item transition-metal" onclick="showElementInfo('Hf')" style="grid-column: 4; grid-row: 6;">Hf<span>72</span></div>
+            <div class="item transition-metal" onclick="showElementInfo('Ta')" style="grid-column: 5; grid-row: 6;">Ta<span>73</span></div>
+            <div class="item transition-metal" onclick="showElementInfo('W')" style="grid-column: 6; grid-row: 6;">W<span>74</span></div>
+            <div class="item transition-metal" onclick="showElementInfo('Re')" style="grid-column: 7; grid-row: 6;">Re<span>75</span></div>
+            <div class="item transition-metal" onclick="showElementInfo('Os')" style="grid-column: 8; grid-row: 6;">Os<span>76</span></div>
+            <div class="item transition-metal" onclick="showElementInfo('Ir')" style="grid-column: 9; grid-row: 6;">Ir<span>77</span></div>
+            <div class="item transition-metal" onclick="showElementInfo('Pt')" style="grid-column: 10; grid-row: 6;">Pt<span>78</span></div>
+            <div class="item transition-metal" onclick="showElementInfo('Au')" style="grid-column: 11; grid-row: 6;">Au<span>79</span></div>
+            <div class="item transition-metal" onclick="showElementInfo('Hg')" style="grid-column: 12; grid-row: 6;">Hg<span>80</span></div>
+            <div class="item other-metal" onclick="showElementInfo('Tl')" style="grid-column: 13; grid-row: 6;">Tl<span>81</span></div>
+            <div class="item other-metal" onclick="showElementInfo('Pb')" style="grid-column: 14; grid-row: 6;">Pb<span>82</span></div>
+            <div class="item other-metal" onclick="showElementInfo('Bi')" style="grid-column: 15; grid-row: 6;">Bi<span>83</span></div>
+            <div class="item other-metal" onclick="showElementInfo('Po')" style="grid-column: 16; grid-row: 6;">Po<span>84</span></div>
+            <div class="item halogen" onclick="showElementInfo('At')" style="grid-column: 17; grid-row: 6;">At<span>85</span></div>
+            <div class="item noble-gas" onclick="showElementInfo('Rn')" style="grid-column: 18; grid-row: 6;">Rn<span>86</span></div>
+            <div class="item alkali-metal" onclick="showElementInfo('Fr')" style="grid-column: 1; grid-row: 7;">Fr<span>87</span></div>
+            <div class="item alkaline-earth-metal" onclick="showElementInfo('Ra')" style="grid-column: 2; grid-row: 7;">Ra<span>88</span></div>
+            <div class="item actinide-series" onclick="showElementInfo('Ac')" style="grid-column: 3; grid-row: 7;">Ac<span>89</span></div>
+            <div class="item transition-metal" onclick="showElementInfo('Rf')" style="grid-column: 4; grid-row: 7;">Rf<span>104</span></div>
+            <div class="item transition-metal" onclick="showElementInfo('Db')" style="grid-column: 5; grid-row: 7;">Db<span>105</span></div>
+            <div class="item transition-metal" onclick="showElementInfo('Sg')" style="grid-column: 6; grid-row: 7;">Sg<span>106</span></div>
+            <div class="item transition-metal" onclick="showElementInfo('Bh')" style="grid-column: 7; grid-row: 7;">Bh<span>107</span></div>
+            <div class="item transition-metal" onclick="showElementInfo('Hs')" style="grid-column: 8; grid-row: 7;">Hs<span>108</span></div>
+            <div class="item transition-metal" onclick="showElementInfo('Mt')" style="grid-column: 9; grid-row: 7;">Mt<span>109</span></div>
+            <div class="item transition-metal" onclick="showElementInfo('Ds')" style="grid-column: 10; grid-row: 7;">Ds<span>110</span></div>
+            <div class="item transition-metal" onclick="showElementInfo('Rg')" style="grid-column: 11; grid-row: 7;">Rg<span>111</span></div>
+            <div class="item transition-metal" onclick="showElementInfo('Cn')" style="grid-column: 12; grid-row: 7;">Cn<span>112</span></div>
+            <div class="item other-metal" onclick="showElementInfo('Nh')" style="grid-column: 13; grid-row: 7;">Nh<span>113</span></div>
+            <div class="item other-metal" onclick="showElementInfo('Fl')" style="grid-column: 14; grid-row: 7;">Fl<span>114</span></div>
+            <div class="item other-metal" onclick="showElementInfo('Mc')" style="grid-column: 15; grid-row: 7;">Mc<span>115</span></div>
+            <div class="item other-metal" onclick="showElementInfo('Lv')" style="grid-column: 16; grid-row: 7;">Lv<span>116</span></div>
+            <div class="item halogen" onclick="showElementInfo('Ts')" style="grid-column: 17; grid-row: 7;">Ts<span>117</span></div>
+            <div class="item noble-gas" onclick="showElementInfo('Og')" style="grid-column: 18; grid-row: 7;">Og<span>118</span></div>
+            <div class="item lanthanide-series" onclick="showElementInfo('Ce')" style="grid-column: 3; grid-row: 9;">Ce<span>58</span></div>
+            <div class="item lanthanide-series" onclick="showElementInfo('Pr')" style="grid-column: 4; grid-row: 9;">Pr<span>59</span></div>
+            <div class="item lanthanide-series" onclick="showElementInfo('Nd')" style="grid-column: 5; grid-row: 9;">Nd<span>60</span></div>
+            <div class="item lanthanide-series" onclick="showElementInfo('Pm')" style="grid-column: 6; grid-row: 9;">Pm<span>61</span></div>
+            <div class="item lanthanide-series" onclick="showElementInfo('Sm')" style="grid-column: 7; grid-row: 9;">Sm<span>62</span></div>
+            <div class="item lanthanide-series" onclick="showElementInfo('Eu')" style="grid-column: 8; grid-row: 9;">Eu<span>63</span></div>
+            <div class="item lanthanide-series" onclick="showElementInfo('Gd')" style="grid-column: 9; grid-row: 9;">Gd<span>64</span></div>
+            <div class="item lanthanide-series" onclick="showElementInfo('Tb')" style="grid-column: 10; grid-row: 9;">Tb<span>65</span></div>
+            <div class="item lanthanide-series" onclick="showElementInfo('Dy')" style="grid-column: 11; grid-row: 9;">Dy<span>66</span></div>
+            <div class="item lanthanide-series" onclick="showElementInfo('Ho')" style="grid-column: 12; grid-row: 9;">Ho<span>67</span></div>
+            <div class="item lanthanide-series" onclick="showElementInfo('Er')" style="grid-column: 13; grid-row: 9;">Er<span>68</span></div>
+            <div class="item lanthanide-series" onclick="showElementInfo('Tm')" style="grid-column: 14; grid-row: 9;">Tm<span>69</span></div>
+            <div class="item lanthanide-series" onclick="showElementInfo('Yb')" style="grid-column: 15; grid-row: 9;">Yb<span>70</span></div>
+            <div class="item lanthanide-series" onclick="showElementInfo('Lu')" style="grid-column: 16; grid-row: 9;">Lu<span>71</span></div>
+            <div class="item actinide-series" onclick="showElementInfo('Th')" style="grid-column: 3; grid-row: 10;">Th<span>90</span></div>
+            <div class="item actinide-series" onclick="showElementInfo('Pa')" style="grid-column: 4; grid-row: 10;">Pa<span>91</span></div>
+            <div class="item actinide-series" onclick="showElementInfo('U')" style="grid-column: 5; grid-row: 10;">U<span>92</span></div>
+            <div class="item actinide-series" onclick="showElementInfo('Np')" style="grid-column: 6; grid-row: 10;">Np<span>93</span></div>
+            <div class="item actinide-series" onclick="showElementInfo('Pu')" style="grid-column: 7; grid-row: 10;">Pu<span>94</span></div>
+            <div class="item actinide-series" onclick="showElementInfo('Am')" style="grid-column: 8; grid-row: 10;">Am<span>95</span></div>
+            <div class="item actinide-series" onclick="showElementInfo('Cm')" style="grid-column: 9; grid-row: 10;">Cm<span>96</span></div>
+            <div class="item actinide-series" onclick="showElementInfo('Bk')" style="grid-column: 10; grid-row: 10;">Bk<span>97</span></div>
+            <div class="item actinide-series" onclick="showElementInfo('Cf')" style="grid-column: 11; grid-row: 10;">Cf<span>98</span></div>
+            <div class="item actinide-series" onclick="showElementInfo('Es')" style="grid-column: 12; grid-row: 10;">Es<span>99</span></div>
+            <div class="item actinide-series" onclick="showElementInfo('Fm')" style="grid-column: 13; grid-row: 10;">Fm<span>100</span></div>
+            <div class="item actinide-series" onclick="showElementInfo('Md')" style="grid-column: 14; grid-row: 10;">Md<span>101</span></div>
+            <div class="item actinide-series" onclick="showElementInfo('No')" style="grid-column: 15; grid-row: 10;">No<span>102</span></div>
+            <div class="item actinide-series" onclick="showElementInfo('Lr')" style="grid-column: 16; grid-row: 10;">Lr<span>103</span></div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

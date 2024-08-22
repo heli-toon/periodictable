@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system;
+  max-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+main {
+  display: flex;
+  margin-bottom: 1rem;
+  flex-direction: column;
+}
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.9em;
+  grid-template-columns: repeat(18, 0.03fr);
+  grid-template-rows: repeat(10, 0.03fr);
+  gap: 5px;
+  max-width: 100%;
+  min-width: 70vw;
+  height: 80%;
+}
+@media (max-width: 768px) {
+  .container {
+    font-size: 60%;
+  }
+}
+@media (max-width: 425px) {
+  .container {
+    font-size: 50%;
+  }
+}
+
+#element-info {
+  width: 60%;
+  height: 4.7em;
+  align-self: center;
+  text-align: center;
+  border: 2px solid black;
+  margin: 1em;
+  padding: 1em;
+  overflow-y: auto;
+}
+
+.item {
+  display: flex;
+  flex-direction: column-reverse;
+  border: 1px solid gray;
+  border-radius: 2px;
+  text-align: center;
+  padding: 0.4em;
+  cursor: pointer;
+  font-weight: 700;
+}
+.item:hover{
+  filter: brightness(1.2);
+}
+.item span{
+  font-weight: 400;
+} 
+.non-metal {
+  background-color: #d6b56b;
+}
+.alkaline-earth-metal {
+  background-color: #849c63;
+}
+.alkali-metal {
+  background-color: #d0916b;
+}
+.transition-metal {
+  background-color: #7a95c8;
+}
+.halogen {
+  background-color: #b95b5c;
+}
+.noble-gas {
+  background-color: #926a94;
+}
+.other-metal {
+  background-color: #749799;
+}
+.lanthanide-series {
+  background-color: #bdbd84;
+}
+.actinide-series {
+  background-color: #969696;
+}
